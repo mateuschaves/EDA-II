@@ -12,10 +12,10 @@ int main(){
 
     for(int i = (sizeof(vetor) / sizeof(int)) - 1; i > 0; i--){
         for(int j = 0; j < i; j++){
-            // Calculando o número de ações
-            numeroAcoes++;
             // Comparando o par de números
             if(vetor[j] > vetor[j+1]){
+                // Calculando o número de ações
+                numeroAcoes++;
                 int temp = vetor[j];
                 vetor[j] = vetor[j+1];
                 vetor[j+1] = temp;
